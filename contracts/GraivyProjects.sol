@@ -167,6 +167,14 @@ contract GraivyProjects {
     return(projects[projectAddress].results);
   }
 
+  function getUserRewards(address userAddress)
+    public
+    constant
+    returns(uint256)
+  {
+    return(rewardAvailable[userAddress]);
+  }
+
   function getProjectIndex(address projectAddress)
     public
     constant
